@@ -1,3 +1,13 @@
+## Fork notice
+
+> [!WARNING]
+> This repository is a fork of the original project available at:
+> https://github.com/the-marenga/sf-scrapbook-helper
+> 
+> The goal of this fork is to rewrite the code into a Python library and to add new functionality, along with improving structure and maintainability.
+
+# --------------------------------------------------
+
 > [!IMPORTANT]
 > S&F added rate-limiting, so the ability to manually crawl an entire server is limited for the foreseeable future.
 
