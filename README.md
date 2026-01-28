@@ -1,12 +1,28 @@
 ## Fork notice
 
 > [!WARNING]
-> This repository is a fork of the original project available at:
+> This repository is a fork of the original project available at: </br>
 > https://github.com/the-marenga/sf-scrapbook-helper
 > 
 > The goal of this fork is to rewrite the code into a Python library and to add new functionality, along with improving structure and maintainability.
 
-# --------------------------------------------------
+
+## Python login example
+
+If you want to reproduce the basic login flow in Python (plus a quick check
+like mushrooms/level), see `scripts/sf_login.py`:
+
+```bash
+# regular (character) login
+python3 scripts/sf_login.py --username <name> --password <pw> --server f1.sfgame.net
+
+# S&F account (SSO) login
+python3 scripts/sf_login.py --username <account> --password <pw> --sso --character "<char name>"
+```
+
+
+# ------- ORIGINAL README -------
+
 
 > [!IMPORTANT]
 > S&F added rate-limiting, so the ability to manually crawl an entire server is limited for the foreseeable future.
@@ -25,19 +41,6 @@ The HoF will initially be fetched from a recent snapshot of the server. If you w
 ## Download
 
 You can always find the newest version [here](https://github.com/the-marenga/sf-scrapbook-helper/releases/latest)
-
-## Python login example
-
-If you want to reproduce the basic login flow in Python (plus a quick check
-like mushrooms/level), see `scripts/sf_login.py`:
-
-```bash
-# regular (character) login
-python3 scripts/sf_login.py --username <name> --password <pw> --server f1.sfgame.net
-
-# S&F account (SSO) login
-python3 scripts/sf_login.py --username <account> --password <pw> --sso --character "<char name>"
-```
 
 ## Privacy Notice
 If you want to have your account data (username+equipment) removed from the online HoF data set, or you represent playagames and you have an issue with the HoF data being shared at all, feel free to open an issue, or contact me via:
